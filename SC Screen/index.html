@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scriptcase - Tela de Edição de Projetos</title>
+    <link rel="stylesheet" href="/scriptcase_editproject/css/style.css" />
+    <link rel="stylesheet" href="/scriptcase_editproject/css/switch.css" />
+    <link rel="icon" type="image/x-icon" href="/scriptcase_editproject/css/favicon.ico">
+    <script
+      src="https://kit.fontawesome.com/173a39847f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="menu-lateral">
+      <h1 class="menu-titulo">
+        Edição de Projeto
+      </h1>
+      <i class="far fa-question-circle"></i>
+      <ul class="menu-nav">
+        <a href="#detalhes"><i class="fa fa-fw fa-wrench"></i>Detalhes</a>
+        <a href="#idiomas"><i class="fas fa-globe"></i>Localizações</a>
+        <a href="#temas"><i class="fab fa-elementor"></i>Temas</a>
+      </ul>
+    </header>
+    <section class="conteudo-principal">
+      <div class="input-nome">
+        <label for="nome-projeto">Nome do Projeto:</label>
+        <input type="text" name="nome-projeto" placeholder="Samples"
+        onfocus="this.value=''" value="" />
+      </div>
+      <button class="botao" >
+        <input type="file" name="myimg" />
+      </button>
+      <div class="input-appinicial">
+      <label for="app-inicial">Escolher aplicação inicial</label><br>
+      <select>
+        <option value=value="app-inicial">Menu - Inittial Application</option>
+      </select>
+    </div>
+      <div class="indexapp">
+        <label for="default" data-checked="Sim" data-unchecked="Não">Usar página index</label>
+        <input type="checkbox" class="toggle" id="default" />
+      </div>
+      <div class="icone-aba">Ícone da aba do navegador(Favicon)
+        <img class="img-mini" src="/scriptcase_editproject/css/favicon.ico" alt="minisc">
+        </div>
+        <label class="text-area">
+          <label for="tool">Sobre o Projeto:</label><br>
+          <textarea name="tool" id="toolbox" cols="30" rows="10"></textarea>
+        </div>
+        <a href="#" class="btn-confirm">Concluir</a>
+        <a href="#" class="btn-cancel">Cancelar</a>
+    </section>
+  </body>
+</html>

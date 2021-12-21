@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* lado esquerdo - menu */
+
+.menu-lateral {
+  height: 100vh;
+  width: 200px;
+  background-color: #fff;
+  text-align: center;
+  display: block;
+  padding-top: 50px;
+}
+
+.menu-nav {
+  padding-top: 220px;
+}
+
+.menu-lateral .menu-titulo {
+  margin-top: 16px;
+}
+
+.menu-lateral .menu-nav {
+  margin-top: 32px;
+}
+
+.menu-nav li {
+  margin: 16px 0;
+}
+
+.menu-nav a {
+  transition: all 0.5s;
+  display: block;
+  padding: 20px;
+  color: rgb(15, 131, 226);
+  text-decoration: none;
+}
+
+.menu-nav i {
+  margin-right: 16px;
+}
+
+.menu-nav a:hover {
+  color: rgb(212, 131, 9);
+}
+
+.menu-nav a:focus {
+  color: red;
+}
+
+.menu-titulo a:hover {
+  color: rgb(212, 131, 9);
+}
+
+/* lado direito - conteudo */
+
+.conteudo-principal {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.botao {
+  border: 2px solid #4a51c7;
+  color: gray;
+  background-color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: clip;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* campo texto */
+
+textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #4a51c7;
+  box-shadow: 4px 4px 4px #999;
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #4a51c7;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  border: 1px solid rgb(212, 131, 9) !important;
+  outline: rgb(212, 131, 9);
+}
+
+select {
+  width: 100%;
+  max-width: 500px;
+  height: 46px;
+}
+
+/* escondendo o "no file chosen" do campo de imagem */
+
+input[type="file"] {
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="file"]:focus {
+  border: 1px solid rgb(212, 131, 9) !important;
+  outline: rgb(212, 131, 9);
+}
+
+textarea:focus {
+  border: 1px solid rgb(212, 131, 9) !important;
+  outline: rgb(212, 131, 9);
+}
+
+/* botoes da parte inferior */
+
+.btn-cancel {
+  background: linear-gradient(92.56deg, #4a51c7 5.07%, #436fd2 100%);
+  border: 1px solid #4a51c7;
+  border-radius: 25px;
+  padding: 10px 22px;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  margin: 20px;
+}
+
+.btn-confirm {
+  background: linear-gradient(92.56deg, #4a51c7 5.07%, #436fd2 100%);
+  border: 1px solid #4a51c7;
+  border-radius: 25px;
+  padding: 10px 22px;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  margin: 20px;
+}
